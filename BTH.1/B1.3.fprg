@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="Dtht1"/>
+        <attribute name="authors" value="ADMIN"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-26 08:45:16 SA"/>
+        <attribute name="created" value="QURNSU47REVTS1RPUC0yVkoxS0FEOzIwMjQtMDktMjY7MDg6MjM6MzMgU0E7MjY5MA=="/>
+        <attribute name="edited" value="QURNSU47REVTS1RPUC0yVkoxS0FEOzIwMjQtMDktMjY7MDg6NDU6MTYgU0E7MTsyODAz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <output expression="&quot;Input the radius of the circle&quot;" newline="True"/>
+            <input variable="x"/>
+            <comment text="The following will call the Circle function using the value the user entered.&#13;&#10;Notice that this variable is called &quot;x&quot; while the function uses 'Radius'. The value of &quot;x&quot; is passed to the function.&#13;&#10;(Sau &#273;&#226;y s&#7869; g&#7885;i h&#224;m Circle b&#7857;ng c&#225;ch s&#7917; d&#7909;ng gi&#225; tr&#7883; m&#224; ng&#432;&#7901;i d&#249;ng &#273;&#227; nh&#7853;p.&#13;&#10;L&#432;u &#253; r&#7857;ng bi&#7871;n n&#224;y &#273;&#432;&#7907;c g&#7885;i l&#224; &quot;x&quot; trong khi h&#224;m s&#7917; d&#7909;ng 'Radius'. Gi&#225; tr&#7883; c&#7911;a &quot;x&quot; &#273;&#432;&#7907;c chuy&#7875;n &#273;&#7871;n h&#224;m.)"/>
+            <output expression="&quot;Area is&quot;&amp; Circle(x)" newline="True"/>
+        </body>
+    </function>
+    <function name="Circle" type="Real" variable="Area">
+        <parameters>
+            <parameter name="Radius" type="Real" array="False"/>
+        </parameters>
+        <body>
+            <comment text="This function has one parameter called Radius. It acts like a local variable that is assigned when the function is callled."/>
+            <declare name="Area" type="Real" array="False" size=""/>
+            <assign variable="Area" expression="Pi * Radius ^ 2"/>
+            <comment text="This function returns the contents of the Area variable"/>
+        </body>
+    </function>
+</flowgorithm>
